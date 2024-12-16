@@ -13,6 +13,7 @@ namespace ConsoleApp16
 
         private static void Run_task1()
         {
+            //1-Write C# program that converts a string to an integer, but the string contains non-numeric characters. And mention what will happen
             /*
              * in this code it will try to convert string to int using parse 
              * but it will found some chars can't convert to intgers 
@@ -32,6 +33,8 @@ namespace ConsoleApp16
 
         private static void Run_task2()
         {
+            //2-Write C# program that Extract a substring from a given string.
+
             /*
              * substring function use to take index of first char based on 0
              * and length will take start from this index
@@ -43,12 +46,16 @@ namespace ConsoleApp16
         }
         private static void Run_task3()
         {
+            //3-Write C# program that take two string variables and print them as one variable
+
             string s1 = "abdelrhman";
             string s2 = "mattar";
             Console.WriteLine($"\n{s1} {s2}");
         }
         private static void Run_task4()
         {
+            //4. Write a program that uses the ternary operator to check if the temperature is too hot, too cold, or just good. Assign the result in a
+            //variable then display the
             Console.Write("enter temp value:");
             string str_temp = Console.ReadLine();
             try
