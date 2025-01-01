@@ -13,19 +13,22 @@
 
             List<Answer> answers = new List<Answer>
             {
-                new Answer(1,"John"),
-                new Answer(3,"25"),
-                new Answer(2,"USA"),
+                new Answer(1,"John"),new Answer(2,"ALI"),
+                new Answer(1,"25"),new Answer(2,"25"),
+                new Answer(1,"USA"),new Answer(2,"EGYPT")
             };
-            Dictionary<Question,Answer> exam_solution = new Dictionary<Question, Answer>();
+            Dictionary<Question,List<Answer>> exam_solution = new Dictionary<Question, List<Answer>>();
             for (int i = 0; i < questions.Count; i++)
             {
-                exam_solution.Add(questions[i], answers[i]);
+                exam_solution.Add(questions[i], new List<Answer> { answers[2 * i], answers[2 * i + 1] });
             }
             foreach (var item in exam_solution)
             {
                 Console.WriteLine(item.Key);
-                Console.WriteLine(item.Value);
+                foreach(var ans in item.Value)
+                {
+                    Console.WriteLine(ans);
+                }
                 Console.WriteLine("=================================================================");
             }
             Console.ReadKey();
